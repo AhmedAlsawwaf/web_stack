@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.card{
+    width: 500px;
+    margin: auto;
+    margin-top: 10%;
+    border: 3px solid grey;
+    border-radius: 5px;
+    overflow: hidden;
+}
+header{
+    background-color: rgb(3, 149, 134);
+    height: 100px;
+}
+.user-picture{
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    margin-left: 15px;
+}
+.row{
+    display: flex;
+    margin-top: 10px;
+}
+.icon{
+    height: 20px;
+    margin-right: 5px;
+}
+.content h3{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.content{
+   margin: 60px 0 20px 15px;
+}

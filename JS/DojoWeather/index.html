@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <h1>DojoWeather</h1>
+            <ul id="cities-container">
+                <li class="city-Item active"><a dataCity="0" onclick="selectCity(this)" href="#"></a></li>
+                <li class="city-Item"><a dataCity="1" onclick="selectCity(this)" href="#"></a></li>
+                <li class="city-Item"><a dataCity="2" onclick="selectCity(this)" href="#"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="weatherHeader">
+        <h1 class="city-shown" id="city-shown"></h1>
+        <div class="degreeSystem">
+            <label for="degreeType">Show temperature in</label>
+            <select onchange="changeDegreeSystem(this)" name="degreeType" id="degreeType">
+                <option value="celsius" selected>C˚</option>
+                <option value="fahrenheit">F˚</option>
+            </select>
+        </div>
+    </section>
+    <section class="forecast">
+        <div class="day-card">
+            <h2 class="day"></h2>
+            <img class="forecast-img" src="./assets/some_rain.png" alt="">
+            <h3 class="condition"></h3>
+            <div class="degree-container">
+                <span class="highest degree"></span>
+                <span class="lowest degree"></span>
+            </div>
+        </div>
+        <div class="day-card">
+            <h2 class="day"></h2>
+            <img class="forecast-img" src="./assets/some_sun.png" alt="">
+            <h3 class="condition"></h3>
+            <div class="degree-container">
+                <span class="highest degree"></span>
+                <span class="lowest degree"></span>
+            </div>
+        </div>
+        <div class="day-card">
+            <h2 class="day"></h2>
+            <img class="forecast-img" src="./assets/some_clouds.png" alt="">
+            <h3 class="condition"></h3>
+            <div class="degree-container">
+                <span class="highest degree"></span>
+                <span class="lowest degree"></span>
+            </div>
+        </div>
+        <div class="day-card">
+            <h2 class="day"></h2>
+            <img class="forecast-img" src="./assets/some_sun.png" alt="">
+            <h3 class="condition"></h3>
+            <div class="degree-container">
+                <span class="highest degree"></span>
+                <span class="lowest degree"></span>
+            </div>
+        </div>
+    </section>
+    <section class="cookie-sec" id="cookie-sec">
+        <img src="./assets/cookie.png" alt="cookie">
+        <div class="cookie-content">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="acceptCookies()" class="accept-cookies">I Accept</button>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

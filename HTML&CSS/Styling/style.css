@@ -1,0 +1,22 @@
+h1,h2,h3{
+    font-family: sans-serif;
+    padding: 20px;
+}
+h1{
+    background-color: black;
+    color: white;
+}
+span{
+    color: aqua;
+}
+h2{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+h3{
+    background-color: rgb(128, 198, 255);
+    text-align: end;
+    text-decoration: underline;
+    color: #0000FF;
+}

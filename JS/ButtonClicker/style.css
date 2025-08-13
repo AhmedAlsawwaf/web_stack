@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+}
+nav h1{
+    font-size: 40px;
+    margin-left: 20px;
+}
+nav input{
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+}
+nav button{
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: royalblue;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: ease 500ms;
+}
+nav button:hover{
+    background-color: rgb(107, 141, 244);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: start;
+}
+.left-content{
+    width: 60%;
+    margin-top: 20px;
+}
+.ninja-card{
+    border: 3px solid black;
+    margin: 0 20px 20px 0;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+.ninja-card-description{
+    text-wrap: nowrap;
+}
+.ninja-card h1{
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.ninja-card h2{
+    font-size: 28px;
+    margin-bottom:10px ;
+}
+.ninja-card h3{
+    font-size: 22px;
+    margin-bottom:10px ;
+}
+.ninja-card p{
+    font-size: 24px;
+    margin-left: 20px;
+    word-spacing: 5px;
+}
+.likes-btn{
+    width: 90px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(254, 217, 102);
+    transition: ease 500ms;
+    cursor: pointer;
+}
+.likes-btn:hover{
+    background-color: rgb(227, 190, 81);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+
+}
+.right-content{
+    width: 40%;
+    border: 3px solid black;
+    margin: 20px 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+}
+.right-content button{
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(146, 195, 125);
+    transition: ease 500ms;
+    cursor: pointer;
+}
+.right-content button:hover{
+    background-color: rgb(116, 158, 98);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
